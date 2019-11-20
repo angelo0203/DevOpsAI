@@ -1,4 +1,4 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/angelo0203/DevOpsAI/tree/master.svg?style=svg)](https://circleci.com/gh/angelo0203/DevOpsAI/tree/master)
 
 ## Project Overview
 
