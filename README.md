@@ -40,3 +40,16 @@ You can find a detailed [project rubric, here](https://review.udacity.com/#!/rub
 * Setup and Configure Kubernetes locally
 * Create Flask app in Container
 * Run via kubectl
+
+### Files
+* app.py -> main application file for handle Flask app and output the predictions
+* Dockerfile -> for building the docker image
+* make_prediction.ps1 -> post the martix to predction (powershell version)
+* make_prediction.sh -> post the martix to predction
+* Makefile -> for setup local runtime
+* prediction_data.json -> part of "make_prediction.ps1" solution
+* requirements.txt -> dependcy for the project
+* run_docker.sh ->  build and run the application in docker container 
+* upload_docker.sh -> upload the docker image into the docker hub
+* run_kubernetes.sh -> build up and running the application inside k8s
+
