@@ -1,6 +1,6 @@
 $postURL = "http://localhost:8000/predict"
 
-$PostBody = Get-Content -Path "c:\Udacity_Project\DevOps_Microservices\project-ml-microservice-kubernetes\prediction_data.json"
+$PostBody = Get-Content -Path "prediction_data.json"
 $postHeaders = @{'Content-Type'='application/json'}
 $postMethod = "POST"
 

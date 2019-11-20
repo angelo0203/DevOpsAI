@@ -1,16 +1,17 @@
-kubectl get pods
-
-NAME                              READY   STATUS    RESTARTS   AGE
-udacityproject-7bd8b94bb7-qcvw8   1/1     Running   0          61m
-
-kubectl port-forward deployments/udacityproject 8000:80
+(devops) PS C:\Users\u260325\Documents\GitHub\DevOpsAI\devops\Scripts> kubectl run --image=angelo0203/houseprediction:1 udacityproject --port=6000:1 udacityproject --port=6000                                                                                        enerator=run-pod/v1 or kubectl create instead.
+kubectl run --generator=deployment/apps.v1 is DEPRECATED and will be removed in a future version. Use kubectl run --generator=run-pod/v1 or kubectl create instead.
+deployment.apps/udacityproject created
+(devops) PS C:\Users\u260325\Documents\GitHub\DevOpsAI\devops\Scripts> kubectl get pods
+NAME                              READY   STATUS    RESTARTS   AGE                                                   t 8000:80
+udacityproject-6785f87bc5-s69bq   1/1     Running   0          18s
+(devops) PS C:\Users\u260325\Documents\GitHub\DevOpsAI\devops\Scripts> kubectl port-forward deployments/udacityproject 8000:80
 Forwarding from 127.0.0.1:8000 -> 80
 Forwarding from [::1]:8000 -> 80
 Handling connection for 8000
+Handling connection for 8000
+Handling connection for 8000
 
-
-Output from make_prediction.ps1
-
+Output：
 prediction
 ----------
 {20.35373177134412}
